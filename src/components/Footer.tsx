@@ -1,5 +1,5 @@
 import React from "react";
-import { Twitter, Linkedin, Github } from "lucide-react";
+import {  Linkedin, Github } from "lucide-react";
 import { getCurrYear } from "@/utils/getCurrYear";
 import Image from "next/image";
 import logo from "@/assets/logo.png";
