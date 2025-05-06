@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import { Upload, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Instagram, Facebook, Linkedin, Twitter, Youtube } from "lucide-react";
 import ImageHow from '@/app/../../public/how_it_works.png'
+import Image from "next/image";
 const Demo = () => {
   const featureAnimation = {
     hidden: { opacity: 0, y: 20 },
@@ -23,7 +24,11 @@ const Demo = () => {
         </div>
 
         <div className="flex flex-col lg:flex-row items-center justify-center gap-8 lg:gap-16 mt-8 sm:mt-10 md:mt-12">
-          <img src={ImageHow} className="w-full lg:w-2/4 rounded-lg" />
+          <Image
+            src={ImageHow}
+            alt="Demo"
+            className="w-full lg:w-2/4 rounded-lg"
+          />
 
           <div className="flex flex-col gap-8 w-full lg:w-auto">
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 sm:gap-8 max-w-5xl mx-auto w-full">
